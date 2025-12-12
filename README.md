@@ -45,9 +45,9 @@ To ensure Python is correctly installed and accessible from your terminal, run t
 If you receive a "command not found" error, you need to update the path.
 
 ---
-<summary>
-### 🪟 Updating Path on Windows (if Python is not found)
-</summary>
+  <summary>
+  ### 🪟 Updating Path on Windows (if Python is not found)
+  </summary>
 If Python was not added to the PATH during installation, you must add the installation folder and its `Scripts` subfolder to the Windows Environment Variables.
 
 1.  **Find your Python Path:** Locate the folder where `python.exe` is installed (e.g., `C:\Users\YourName\AppData\Local\Programs\Python\Python310`).
@@ -59,9 +59,9 @@ If Python was not added to the PATH during installation, you must add the instal
     * The Scripts subfolder (e.g., `C:\Users\YourName\AppData\Local\Programs\Python\Python310\Scripts`)
 6.  Click **"OK"** on all windows to save the changes.
 7.  **Close and reopen your terminal/VS Code** to apply the new path.
-<summary>
-### 🍎 Updating Path on macOS (if Python is not found)
-</summary>
+  <summary>
+  ### 🍎 Updating Path on macOS (if Python is not found)
+  </summary>
 On macOS, you update the PATH by editing your shell's configuration file (usually `.zshrc` or `.bash_profile`).
 
 1.  **Locate the Python executable path.** This might be in a path like `/Library/Frameworks/Python.framework/Versions/3.x/bin`.
