@@ -90,7 +90,8 @@ On macOS, you update the PATH by editing your shell's configuration file (usuall
 1.  Download the folder:
     * Navigate to the repository page on GitHub.
     * Above the list of files, click the green **`< > Code`** button.
-    * In the dropdown that appears, click **`Download ZIP`**. 
+    * In the dropdown that appears, click **`Download ZIP`**.
+      <img width="468" height="359" alt="Screenshot 2025-12-12 123644" src="https://github.com/user-attachments/assets/d497f842-a19b-4e82-bd00-dd70e26cbbb1" />
     * Extract the contents to your preferred location. The resulting folder will be named:
     ```
     dsph_xliff_helper_python/
