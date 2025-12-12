@@ -1,0 +1,50 @@
+2025-12-12 01:19:03,896 | INFO | 🌍 Server running at http://localhost:5000
+2025-12-12 01:19:03,910 | WARNING |  * Debugger is active!
+2025-12-12 01:19:03,912 | INFO |  * Debugger PIN: 109-209-204
+2025-12-12 01:19:06,949 | INFO | 📄 Home page opened
+2025-12-12 01:19:06,955 | INFO | 127.0.0.1 - - [12/Dec/2025 01:19:06] "GET / HTTP/1.1" 200 -
+
+----------------------------------------
+🕒 NEW RUN: 2025-12-12 01:19:12
+----------------------------------------
+
+2025-12-12 01:19:12,623 | INFO | 📁 STEP 1: XLF → Excel started
+2025-12-12 01:19:12,627 | INFO | 📥 XLF uploaded: AM_SFB_LOCAL_REPORTINGS_DE.xlf
+2025-12-12 01:19:12,628 | INFO | 🆔 Model name: AM_SFB_LOCAL_REPORTINGS
+2025-12-12 01:19:12,628 | INFO | 🌐 Language code: DE
+2025-12-12 01:19:12,729 | INFO | 📤 Excel created: output\AM_SFB_LOCAL_REPORTINGS.xlsx
+2025-12-12 01:19:12,772 | INFO | 127.0.0.1 - - [12/Dec/2025 01:19:12] "POST /convert_xlf_to_excel HTTP/1.1" 200 -
+
+----------------------------------------
+🕒 NEW RUN: 2025-12-12 01:19:19
+----------------------------------------
+
+2025-12-12 01:19:19,689 | INFO | 📁 STEP 2: Excel → XLF started
+2025-12-12 01:19:19,693 | INFO | 📥 Excel uploaded
+2025-12-12 01:19:19,694 | INFO | 🆔 Model from Excel file: AM_SFB_LOCAL_REPORTINGS
+2025-12-12 01:19:19,757 | INFO | 🔄 Loaded 74 translations
+2025-12-12 01:19:19,761 | INFO | 📤 Final XLF created: output\AM_SFB_LOCAL_REPORTINGS_DE.xlf
+2025-12-12 01:19:19,762 | INFO | 🧹 Cleanup...
+2025-12-12 01:19:19,764 | INFO | 🗑️ Deleted uploads\input.xlsx
+2025-12-12 01:19:19,766 | INFO | 🗑️ Deleted uploads\source.xlf
+2025-12-12 01:19:19,768 | INFO | 🗑️ Deleted output\AM_SFB_LOCAL_REPORTINGS.xlsx
+2025-12-12 01:19:19,807 | INFO | 127.0.0.1 - - [12/Dec/2025 01:19:19] "POST /convert_excel_to_xlf HTTP/1.1" 200 -
+2025-12-12 01:23:51,700 | INFO | 📄 Home page opened
+2025-12-12 01:23:51,704 | INFO | 127.0.0.1 - - [12/Dec/2025 01:23:51] "GET / HTTP/1.1" 200 -
+
+----------------------------------------
+🕒 NEW RUN: 2025-12-12 01:24:02
+----------------------------------------
+
+2025-12-12 01:24:02,558 | INFO | 📁 STEP 1: XLF → Excel started
+2025-12-12 01:24:02,562 | INFO | 📥 XLF uploaded: AM_SFB_LOCAL_REPORTINGS_DE.xlf
+2025-12-12 01:24:02,562 | INFO | 🆔 Model name: AM_SFB_LOCAL_REPORTINGS
+2025-12-12 01:24:02,564 | INFO | 🌐 Language code: DE
+2025-12-12 01:24:02,657 | INFO | 📤 Excel created: output\AM_SFB_LOCAL_REPORTINGS.xlsx
+2025-12-12 01:24:02,697 | INFO | 127.0.0.1 - - [12/Dec/2025 01:24:02] "POST /convert_xlf_to_excel HTTP/1.1" 200 -
+2025-12-12 01:26:16,389 | INFO | 📄 Home page opened
+2025-12-12 01:26:16,393 | INFO | 127.0.0.1 - - [12/Dec/2025 01:26:16] "GET / HTTP/1.1" 200 -
+2025-12-12 01:26:32,836 | INFO | 📄 Home page opened
+2025-12-12 01:26:32,841 | INFO | 127.0.0.1 - - [12/Dec/2025 01:26:32] "GET / HTTP/1.1" 200 -
+2025-12-12 01:27:23,489 | INFO | 📄 Home page opened
+2025-12-12 01:27:23,494 | INFO | 127.0.0.1 - - [12/Dec/2025 01:27:23] "GET / HTTP/1.1" 200 -

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Datasphere XLIFF File Converter</title>
+
+    <!-- SAP Icon Font -->
+    <link rel="stylesheet" href="https://ui5.sap.com/resources/sap/ui/core/themes/base/SAP-icons.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Inter, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        :root {
+            --bg: #f4f7fa;
+            --text: #1a1a1a;
+            --card: white;
+            --border: #d0d8e0;
+            --accent: #0a6ed1;
+        }
+
+        body.dark {
+            --bg: #121212;
+            --text: #f1f1f1;
+            --card: #1e1e1e;
+            --border: #3a3a3a;
+            --accent: #5fb3ff;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            margin: 25px 0;
+        }
+
+        /* MAIN LAYOUT */
+        .main-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 10px 40px;
+        }
+
+        .cards-column {
+            width: 700px;
+        }
+
+        /* Yoda Panel */
+        .yoda-panel {
+            width: 200px;
+            text-align: right;
+            position: sticky;
+            top: 40px;
+            height: fit-content;
+        }
+
+        .yoda-img {
+            width: 200px;
+            opacity: 0.9;
+            border-radius: 11px;
+        }
+
+        .yoda-quote {
+            margin-top: 8px;
+            font-style: italic;
+            font-size: 14px;
+            color: gray;
+        }
+
+        @media(max-width: 1100px) {
+            .main-wrapper { flex-direction: column; align-items: center; }
+            .yoda-panel { display: none; }
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+            border: 1px solid var(--border);
+        }
+
+        .upload-box {
+            border: 2px dashed var(--accent);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-bottom: 15px;
+            min-height: 100px;
+        }
+
+        .upload-box:hover {
+            background: rgba(10, 110, 209, 0.05);
+        }
+
+        .sapUiIcon {
+            font-family: "SAP-icons";
+            font-size: 38px;
+            color: var(--accent);
+        }
+
+        .file-icon-small {
+            font-size: 22px;
+            color: var(--accent);
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+
+        button {
+            background: var(--accent);
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.2s;
+        }
+
+        button:hover { background: #085caf; }
+
+        .success {
+            display: none;
+        }
+
+        /* Loader */
+        #loaderOverlay {
+            position: fixed;
+            backdrop-filter: blur(4px);
+            background: rgba(0,0,0,0.4);
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .spinner {
+            width: 55px;
+            height: 55px;
+            border: 6px solid #eee;
+            border-top: 6px solid var(--accent);
+            border-radius: 50%;
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        #loaderText {
+            color: white;
+            margin-top: 18px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* Error Popup */
+        #errorBox {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #ffcccc;
+            padding: 14px 20px;
+            border-left: 6px solid red;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #900;
+            z-index: 3000;
+        }
+
+        /* Dark mode toggle */
+        #darkToggle {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            font-size: 26px;
+            cursor: pointer;
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="darkToggle" class="sapUiIcon">&#xe19a;</div>
+<div id="errorBox"></div>
+
+<!-- Loader -->
+<div id="loaderOverlay">
+    <div>
+        <div class="spinner"></div>
+        <div id="loaderText">Converting… please wait</div>
+    </div>
+</div>
+
+<h1>Datasphere XLIFF File Converter</h1>
+
+<!-- LAYOUT -->
+<div class="main-wrapper">
+
+    <!-- LEFT SIDE: CARDS -->
+    <div class="cards-column">
+
+        <!-- Convert XLF → Excel -->
+        <div class="card">
+            <h2><span class="sapUiIcon">&#xe011;</span> Convert XLF → Excel</h2>
+
+            <div id="uploadXLFBox" class="upload-box">
+                <span class="sapUiIcon">&#xe12e;</span><br>
+                Click to upload .xlf file
+            </div>
+
+            <form id="formXLF" action="/convert_xlf_to_excel" enctype="multipart/form-data">
+                <input type="file" id="xlfInput" name="xlf_file" style="display:none">
+                <button type="submit">Convert</button>
+            </form>
+
+            <div id="xlfSuccess" class="success">✔ File selected</div>
+        </div>
+
+        <!-- Convert Excel → XLF -->
+        <div class="card">
+            <h2><span class="sapUiIcon">&#xe011;</span> Convert Excel → XLF</h2>
+
+            <div id="uploadExcelBox" class="upload-box">
+                <span class="sapUiIcon">&#xe034;</span><br>
+                Click to upload .xlsx file
+            </div>
+
+            <form id="formExcel" action="/convert_excel_to_xlf" enctype="multipart/form-data">
+                <input type="file" id="excelInput" name="excel_file" style="display:none">
+                <button type="submit">Convert</button>
+            </form>
+
+            <div id="excelSuccess" class="success">✔ File selected</div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE: YODA -->
+    <div class="yoda-panel">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Yoda_Empire_Strikes_Back.png"
+             class="yoda-img">
+        <div class="yoda-quote">
+            “May your translations be automated,<br>
+            and your &lt;target&gt; tags always aligned.”
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const loader = document.getElementById("loaderOverlay");
+    const errorBox = document.getElementById("errorBox");
+
+    function showLoader() { loader.style.display = "flex"; }
+    function hideLoader() { loader.style.display = "none"; }
+
+    function showError(msg) {
+        errorBox.innerText = msg;
+        errorBox.style.display = "block";
+        setTimeout(() => errorBox.style.display = "none", 3000);
+    }
+
+    // Dark mode
+    document.getElementById("darkToggle").onclick = () => {
+        document.body.classList.toggle("dark");
+    };
+
+    // ==== File Upload Box Logic (New Clean UI) ====
+    function setupUpload(boxId, inputId, successId, allowedExt) {
+        const box = document.getElementById(boxId);
+        const input = document.getElementById(inputId);
+        const success = document.getElementById(successId);
+
+        box.addEventListener("click", () => input.click());
+
+        input.addEventListener("change", () => {
+            if (!input.files.length) return;
+
+            const file = input.files[0];
+            const ext = file.name.split('.').pop().toLowerCase();
+
+            if (!allowedExt.includes(ext)) {
+                input.value = "";
+                showError("Invalid file: " + file.name);
+                return;
+            }
+
+            // Replace box content with selected filename
+            box.innerHTML = `
+                <span class="sapUiIcon file-icon-small">&#xe04a</span>
+                ${file.name}
+            `;
+
+            // Hide old green success message
+            success.style.display = "none";
+        });
+    }
+
+    setupUpload("uploadXLFBox", "xlfInput", "xlfSuccess", ["xlf"]);
+    setupUpload("uploadExcelBox", "excelInput", "excelSuccess", ["xlsx"]);
+
+    // Submit handlers
+    setupFormSubmit("formXLF");
+    setupFormSubmit("formExcel");
+
+    function setupFormSubmit(formId) {
+        const form = document.getElementById(formId);
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const input = form.querySelector("input[type='file']");
+            if (!input.files.length) {
+                showError("Please select a file first.");
+                return;
+            }
+
+            showLoader();
+            const formData = new FormData(form);
+
+            fetch(form.action, { method: "POST", body: formData })
+                .then(response => {
+                    if (!response.ok) {
+                        hideLoader();
+                        showError("Conversion failed.");
+                        return null;
+                    }
+
+                    let header = response.headers.get("Content-Disposition") || "";
+                    let filename = "download.xlf";
+
+                    if (header.includes("filename=")) {
+                        filename = header.split("filename=")[1].replace(/"/g, "").trim();
+                    }
+
+                    return response.blob().then(blob => ({ blob, filename }));
+                })
+                .then(fileObj => {
+                    if (!fileObj) return;
+
+                    hideLoader();
+
+                    const url = window.URL.createObjectURL(fileObj.blob);
+                    const a = document.createElement("a");
+                    a.href = url;
+                    a.download = fileObj.filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                })
+                .catch(() => {
+                    hideLoader();
+                    showError("Unexpected error occurred.");
+                });
+        });
+    }
+</script>
+
+</body>
+</html>
+

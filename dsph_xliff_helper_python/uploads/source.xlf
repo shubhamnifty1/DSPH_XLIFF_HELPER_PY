@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file datatype="plaintext" original="self" source-language="en-US">
+        <header>
+            <sxmd:metadata xmlns:sxmd="urn:x-sap:mlt:xliff12:metadata:1.0" xmlns="urn:x-sap:mlt:tsmetadata:1.0">
+                <object-name>E0320A343E7EA06D1900ACEA8C4E8500</object-name>
+            </sxmd:metadata>
+        </header>
+        <body>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#PRGRP_MAKTX@ENDUSERTEXT.LABEL">
+                <source>Invoicing product group</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#PROZ@ENDUSERTEXT.LABEL">
+                <source>Actual costs (%)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#KST_RUE@ENDUSERTEXT.LABEL">
+                <source>Cost Center (Confirmed)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#VERZUG@ENDUSERTEXT.LABEL">
+                <source>RestTm</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#PLNAL@ENDUSERTEXT.LABEL">
+                <source>Plan group counter</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#TR_NRUE@ENDUSERTEXT.LABEL">
+                <source>tR (n.rückgem.)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#IST_KLART@ENDUSERTEXT.LABEL">
+                <source>Actual costs of performance (EUR)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#PLAN_KOST@ENDUSERTEXT.LABEL">
+                <source>Planned value (EUR)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#MODEL_NAME@ENDUSERTEXT.LABEL">
+                <source>MODEL_NAME</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#PWERK@ENDUSERTEXT.LABEL">
+                <source>PWERK</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#FSAVD_NRUE_D@ENDUSERTEXT.LABEL">
+                <source>spät.Start (n.rückgem.)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#ERNAM@ENDUSERTEXT.LABEL">
+                <source>Created by</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#TECHN@ENDUSERTEXT.LABEL">
+                <source>Technology</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#FTRMI_D@ENDUSERTEXT.LABEL">
+                <source>Actual release date</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#SCHLAFZEIT@ENDUSERTEXT.LABEL">
+                <source>Sleep time</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#KF@ENDUSERTEXT.LABEL">
+                <source>KOFA</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#VORNR@ENDUSERTEXT.LABEL">
+                <source>Activity Number</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#AUFNR@ENDUSERTEXT.LABEL">
+                <source>Order Number</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#KTEXT1@ENDUSERTEXT.LABEL">
+                <source>Work plan short text</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#VORNR_RUE@ENDUSERTEXT.LABEL">
+                <source>Last Confirmed Operation</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#CLASS@ENDUSERTEXT.LABEL">
+                <source>Project class</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#KZ_ZW110@ENDUSERTEXT.LABEL">
+                <source>ZW110-KZ</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#MAKTX@ENDUSERTEXT.LABEL">
+                <source>Material Description</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#DISPO@ENDUSERTEXT.LABEL">
+                <source>MRP Controller/Dispatcher</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#FEVOR@ENDUSERTEXT.LABEL">
+                <source>Production controller</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#SPART@ENDUSERTEXT.LABEL">
+                <source>Division</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#KTEXT@ENDUSERTEXT.LABEL">
+                <source>Workplace designation</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#ARBPL@ENDUSERTEXT.LABEL">
+                <source>Work Center (not confirmed)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#ZZPRC@ENDUSERTEXT.LABEL">
+                <source>Internal customer</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#GSTRP_D@ENDUSERTEXT.LABEL">
+                <source>Basic start date</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#ATWRT_KBNR@ENDUSERTEXT.LABEL">
+                <source>Characteristic Value (Component Number)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#BMSCH_NRUE@ENDUSERTEXT.LABEL">
+                <source>Basismenge</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#WERKA@ENDUSERTEXT.LABEL">
+                <source>Plant (not confirmed)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#IEDDL_D@ENDUSERTEXT.LABEL">
+                <source>letzter AVO (Rückm.)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#BESTAND@ENDUSERTEXT.LABEL">
+                <source>Inventory</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#MGR_NRUE@ENDUSERTEXT.LABEL">
+                <source>Machine Group (not confirmed)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#ERSDA@ENDUSERTEXT.LABEL">
+                <source>Created on</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#DAUAT@ENDUSERTEXT.LABEL">
+                <source>Order Type</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#LTRMP_D@ENDUSERTEXT.LABEL">
+                <source>Deliv. Date fr. Planned Ord.</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#LTXA1_NRUE@ENDUSERTEXT.LABEL">
+                <source>Kurztext (n.rückgem.)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#KP@ENDUSERTEXT.LABEL">
+                <source>KOPL</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#SSELD_NRUE_D@ENDUSERTEXT.LABEL">
+                <source>spät.Ende (n.rückgem.)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#WERK_RUE@ENDUSERTEXT.LABEL">
+                <source>Plant (Confirmed)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#PRGRP@ENDUSERTEXT.LABEL">
+                <source>Product Group</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#ATWRT_GRN@ENDUSERTEXT.LABEL">
+                <source>Characteristic Value (Group Number)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#BEDARF_TERMIN@ENDUSERTEXT.LABEL">
+                <source>Requirement Date</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#ARBPL_RUE@ENDUSERTEXT.LABEL">
+                <source>Work Center (Confirmed)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#APRIO@ENDUSERTEXT.LABEL">
+                <source>Order priority</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#GEPL_DLZ@ENDUSERTEXT.LABEL">
+                <source>gepl.DLZ</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#PRCTR@ENDUSERTEXT.LABEL">
+                <source>Profitcenter</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#LAGBESTAND@ENDUSERTEXT.LABEL">
+                <source>LagBestand</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#TE_NRUE@ENDUSERTEXT.LABEL">
+                <source>tE (n.rückgem.)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#PLNNR@ENDUSERTEXT.LABEL">
+                <source>Plan group</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#KST_NRUE@ENDUSERTEXT.LABEL">
+                <source>Cost Center (not confirmed)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#TRB_NRUE@ENDUSERTEXT.LABEL">
+                <source>tRB (n.rückgem.)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#TEB_NRUE@ENDUSERTEXT.LABEL">
+                <source>tEB (n.rückgem.)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#IST_MNG@ENDUSERTEXT.LABEL">
+                <source>Istmenge</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#RANZ_AVO@ENDUSERTEXT.LABEL">
+                <source>restl.AVO</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#KSCHL@ENDUSERTEXT.LABEL">
+                <source>Designation class</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#REST_DLZ@ENDUSERTEXT.LABEL">
+                <source>Rest-DLZ</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#KBNKZ@ENDUSERTEXT.LABEL">
+                <source>KanbanKz</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#ENDDATUM_D@ENDUSERTEXT.LABEL">
+                <source>Expected End Date</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#GLTRP_D@ENDUSERTEXT.LABEL">
+                <source>Basic finish date</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#IST_DLZ@ENDUSERTEXT.LABEL">
+                <source>Ist-DLZ</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#MATNR@ENDUSERTEXT.LABEL">
+                <source>Material Number</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#MGR_RUE@ENDUSERTEXT.LABEL">
+                <source>Machine Group (Confirmed)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING@ENDUSERTEXT.LABEL">
+                <source>AM_SFB_LOCAL_REPORTING</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#PGTYP@ENDUSERTEXT.LABEL">
+                <source>Product group type</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#CAPREQ_NRUE@ENDUSERTEXT.LABEL">
+                <source>Last (n.rückgem./STD)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#DDTEXT@ENDUSERTEXT.LABEL">
+                <source>Red level</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#IEDD1_D@ENDUSERTEXT.LABEL">
+                <source>1. AVO (Rückm.)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#BUKRS@ENDUSERTEXT.LABEL">
+                <source>Accounting area</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#IST_KOST@ENDUSERTEXT.LABEL">
+                <source>Actual costs (EUR)</source>
+            </trans-unit>
+            <trans-unit id="AM_SFB_LOCAL_REPORTING#CAPREQ_REST@ENDUSERTEXT.LABEL">
+                <source>Rest-Last FAUF (STD)</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
