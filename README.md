@@ -98,17 +98,23 @@ On macOS, you update the PATH by editing your shell's configuration file (usuall
     ```
     dsph_xliff_helper_python/
     ```
-2.  Open the folder in an IDE - VS code
+2.  Open the folder in an IDE - VS code:
+
+    <img width="250" height="250" alt="Screenshot 2025-12-12 124118" src="https://github.com/user-attachments/assets/89b920cc-591b-4b0d-8dbd-cc415b714065" />
+
 3.  Open terminal and Install dependencies:
+
+     <img width="300" height="250" alt="image" src="https://github.com/user-attachments/assets/72cc4d0f-e344-4480-8290-061c818c2003" />
+
     ```bash
     pip install -r requirements.txt
     ```
 
-4.  Start the application:
+5.  Start the application:
     ```bash
     python app.py
     ```
-5.  Access the webpage hosted locally:
+6.  Access the webpage hosted locally:
     ```url
     http://localhost:5000/
     ```
