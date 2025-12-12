@@ -89,7 +89,7 @@ On macOS, you update the PATH by editing your shell's configuration file (usuall
 
 1.  Download the folder:
     ```
-    sac_xliff_helper_python/
+    dsph_xliff_helper_python/
     ```
 2.  Open the folder in an IDE - VS code
 3.  Open terminal and Install dependencies:
