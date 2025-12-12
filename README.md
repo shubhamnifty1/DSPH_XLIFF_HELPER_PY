@@ -88,6 +88,10 @@ On macOS, you update the PATH by editing your shell's configuration file (usuall
 ## 📦 Installation
 
 1.  Download the folder:
+    * Navigate to the repository page on GitHub.
+    * Above the list of files, click the green **`< > Code`** button.
+    * In the dropdown that appears, click **`Download ZIP`**. 
+    * Extract the contents to your preferred location. The resulting folder will be named:
     ```
     dsph_xliff_helper_python/
     ```
@@ -96,6 +100,7 @@ On macOS, you update the PATH by editing your shell's configuration file (usuall
     ```bash
     pip install -r requirements.txt
     ```
+
 4.  Start the application:
     ```bash
     python app.py
