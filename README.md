@@ -122,7 +122,7 @@ On macOS, you update the PATH by editing your shell's configuration file (usuall
 
 ## 🔄 How to Use
 
-### STEP 1 — Convert XLF → Excel
+### STEP 1: Convert XLF → Excel
 1.  **Download and Prepare the XLF File**
     * Download the translation `.xlf` file from the **SAP Datasphere** **Translation** tab based on your Analytical model.
     * **Crucial Naming Convention:** Ensure the file name follows this format: `<Modelname>_<SPRAS>.xlf` where `SPRAS` (language code) is **2 letters only**.
@@ -131,7 +131,7 @@ On macOS, you update the PATH by editing your shell's configuration file (usuall
 3.  Click **Convert**
     * A file is donwloaded: `<Model>.xlsx`
 
-### STEP 2 — Convert Excel → XLF
+### STEP 2: Convert Excel → XLF
 1.  Fix the **excel formula in column E [auto_translate]** and **paste it as values to Column C [target]**, then Save the file.
 2.  **Upload the Excel** you saved from previous step
 3.  Click **Convert**
